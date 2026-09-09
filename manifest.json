@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Localizador de Cursos SISP",
+  "version": "2.0",
+  "description": "Filtra a lista suspensa de cursos no SISP por data e nome (Via Side Panel).",
+  "permissions": [
+    "sidePanel",
+    "tabs",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Abrir Filtro SISP"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
